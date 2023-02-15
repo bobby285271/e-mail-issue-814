@@ -1,42 +1,49 @@
-#0  0x00007f810f2801b3 in camel_message_info_get_from () from /nix/store/9apirq79swwjqvh8z66g3h0phc1qkf1r-evolution-data-server-3.46.3/lib/libcamel-1.2.so.64
-No symbol table info available.
-#1  0x0000000000439143 in mail_conversation_item_model_get_from (self=self@entry=0x13bf520) at src/io.elementary.mail.p/ConversationList/ConversationItemModel.c:777
-        _tmp7_ = 0x7f80900019b0
+#0  0x00007f1d9e7341b3 in camel_message_info_get_from (mi=mi@entry=0x5000000000000000) at /build/evolution-data-server-3.46.3/src/camel/camel-message-info.c:2352
+        __inst = 0x5000000000000000
+        __t = 20714832
+        __r = <optimized out>
+        _g_boolean_var_ = <optimized out>
+        klass = <optimized out>
+        result = <optimized out>
+        __func__ = "camel_message_info_get_from"
+        _g_boolean_var_ = <optimized out>
+#1  0x0000000000439143 in mail_conversation_item_model_get_from (self=self@entry=0x1f28f50) at src/io.elementary.mail.p/ConversationList/ConversationItemModel.c:777
+        _tmp7_ = 0x1f4c110
         _tmp9_ = <optimized out>
-        address = 0x7f80900019b0
-        _tmp6_ = 0x7f80900019b0
-        _tmp8_ = 0xbfdd70014cdc00
+        address = 0x1f4c110
+        _tmp6_ = 0x1f4c110
+        _tmp8_ = 0x5000000000000000
         _tmp10_ = <optimized out>
-        message = 0xbfdd70014cdc00
-        _tmp3_ = 0x136df40
-        _tmp5_ = 0xbfdd70014cdc00
+        message = 0x5000000000000000
+        _tmp3_ = 0x1f0b9c9
+        _tmp5_ = 0x5000000000000000
         _tmp26_ = <optimized out>
-        _tmp2_ = 0x136df40
-        _tmp4_ = 0xbfdd70014cdc00
+        _tmp2_ = 0x1f0b9c9
+        _tmp4_ = 0x5000000000000000
         _tmp25_ = <optimized out>
         result = <optimized out>
-        senders = 0x13fb920
+        senders = 0x1ff6250
         _tmp0_ = <optimized out>
         senders_length1 = 0
         _senders_size_ = 0
-        current_node = 0x136df40
+        current_node = 0x1f0b9c9
         _tmp1_ = <optimized out>
         _tmp27_ = <optimized out>
         _tmp27__length1 = <optimized out>
         _tmp30_ = <optimized out>
         __func__ = "mail_conversation_item_model_get_from"
-#2  0x000000000043eeb0 in mail_conversation_list_item_assign (self=self@entry=0x13f1840, data=0x13bf520) at src/io.elementary.mail.p/ConversationList/ConversationListItem.c:214
+#2  0x000000000043eeb0 in mail_conversation_list_item_assign (self=self@entry=0x1fec350, data=0x1f28f50) at src/io.elementary.mail.p/ConversationList/ConversationListItem.c:214
         _tmp12_ = <optimized out>
         _tmp13_ = <optimized out>
-        _tmp0_ = 0x1403350
+        _tmp0_ = 0x1ff28d0
         _tmp1_ = <optimized out>
         _tmp2_ = <optimized out>
         _tmp3_ = 0x0
         _tmp4_ = <optimized out>
         _tmp5_ = <optimized out>
         _tmp6_ = <optimized out>
-        source_label_text = 0x13f8510 ""
-        _tmp7_ = 0x13f8510 ""
+        source_label_text = 0x1f3f650 ""
+        _tmp7_ = 0x1f3f650 ""
         _tmp8_ = <optimized out>
         _tmp9_ = <optimized out>
         _tmp14_ = <optimized out>
@@ -61,9 +68,9 @@ No symbol table info available.
         _tmp60_ = <optimized out>
         _tmp61_ = <optimized out>
         __func__ = "mail_conversation_list_item_assign"
-#3  0x000000000043ae77 in _mail_conversation_list_box___lambda32_ (self=<optimized out>, old_widget=0x13f1840, item=0x13bf520) at src/io.elementary.mail.p/ConversationList/ConversationListBox.c:3408
-        row = 0x13f1840
-        _tmp2_ = 0x13f1840
+#3  0x000000000043ae77 in _mail_conversation_list_box___lambda32_ (self=<optimized out>, old_widget=0x1fec350, item=0x1f28f50) at src/io.elementary.mail.p/ConversationList/ConversationListBox.c:3408
+        row = 0x1fec350
+        _tmp2_ = 0x1fec350
         _tmp3_ = <optimized out>
         result = <optimized out>
         row = <optimized out>
@@ -77,23 +84,23 @@ No symbol table info available.
         __t = <optimized out>
         __r = <optimized out>
         _tmp1_ = <optimized out>
-#4  __mail_conversation_list_box___lambda32__virtualizing_list_box_row_factory_method (item=0x13bf520, old_widget=0x13f1840, self=<optimized out>) at src/io.elementary.mail.p/ConversationList/ConversationListBox.c:3421
+#4  __mail_conversation_list_box___lambda32__virtualizing_list_box_row_factory_method (item=0x1f28f50, old_widget=0x1fec350, self=<optimized out>) at src/io.elementary.mail.p/ConversationList/ConversationListBox.c:3421
         result = <optimized out>
-#5  0x0000000000451478 in virtualizing_list_box_get_widget (self=self@entry=0xa62220, index=<optimized out>) at src/io.elementary.mail.p/VirtualizingListBox/VirtualizingListBox.c:606
-        item = 0x13bf520
+#5  0x0000000000451478 in virtualizing_list_box_get_widget (self=self@entry=0x17c2230, index=<optimized out>) at src/io.elementary.mail.p/VirtualizingListBox/VirtualizingListBox.c:606
+        item = 0x1f28f50
         _tmp0_ = <optimized out>
         _tmp1_ = <optimized out>
-        _tmp2_ = 0x13bf520
-        _tmp3_ = 0x13bf520
-        old_widget = 0x13f1840
+        _tmp2_ = 0x1f28f50
+        _tmp3_ = 0x1f28f50
+        old_widget = 0x1fec350
         _tmp4_ = <optimized out>
         _tmp5_ = <optimized out>
         _tmp6_ = <optimized out>
         new_widget = 0x0
         _tmp14_ = <optimized out>
         _tmp14__target = <optimized out>
-        _tmp15_ = 0x13bf520
-        _tmp16_ = 0x13f1840
+        _tmp15_ = 0x1f28f50
+        _tmp16_ = 0x1fec350
         _tmp17_ = <optimized out>
         _tmp18_ = <optimized out>
         _tmp19_ = <optimized out>
@@ -117,15 +124,15 @@ No symbol table info available.
         _tmp9_ = <optimized out>
         _tmp10_ = <optimized out>
         _tmp13_ = <optimized out>
-        added = 1
+        added = 0
         result = <optimized out>
         __func__ = <optimized out>
         _g_boolean_var_ = <optimized out>
-#7  virtualizing_list_box_ensure_visible_widgets (self=self@entry=0xa62220, model_changed=model_changed@entry=1) at src/io.elementary.mail.p/VirtualizingListBox/VirtualizingListBox.c:1432
+#7  virtualizing_list_box_ensure_visible_widgets (self=self@entry=0x17c2230, model_changed=model_changed@entry=1) at src/io.elementary.mail.p/VirtualizingListBox/VirtualizingListBox.c:1432
         _tmp0_ = <optimized out>
         _tmp1_ = <optimized out>
         widget_height = <optimized out>
-        bin_height = 134
+        bin_height = 0
         _tmp4_ = <optimized out>
         _tmp5_ = <optimized out>
         _tmp6_ = <optimized out>
@@ -147,7 +154,7 @@ No symbol table info available.
         _tmp43_ = <optimized out>
         _tmp44_ = <optimized out>
         __func__ = "virtualizing_list_box_ensure_visible_widgets"
-#8  0x0000000000452ec2 in virtualizing_list_box_on_items_changed (removed=<optimized out>, added=<optimized out>, position=<optimized out>, self=0xa62220) at src/io.elementary.mail.p/VirtualizingListBox/VirtualizingListBox.c:665
+#8  0x0000000000452ec2 in virtualizing_list_box_on_items_changed (removed=<optimized out>, added=<optimized out>, position=<optimized out>, self=0x17c2230) at src/io.elementary.mail.p/VirtualizingListBox/VirtualizingListBox.c:665
         _tmp0_ = <optimized out>
         _tmp5_ = <optimized out>
         _tmp6_ = <optimized out>
@@ -160,59 +167,59 @@ No symbol table info available.
         _tmp2_ = <optimized out>
         _tmp3_ = <optimized out>
         _tmp4_ = <optimized out>
-#9  _virtualizing_list_box_on_items_changed_g_list_model_items_changed (_sender=<optimized out>, position=<optimized out>, removed=<optimized out>, added=<optimized out>, self=0xa62220) at src/io.elementary.mail.p/VirtualizingListBox/VirtualizingListBox.c:2954
+#9  _virtualizing_list_box_on_items_changed_g_list_model_items_changed (_sender=<optimized out>, position=<optimized out>, removed=<optimized out>, added=<optimized out>, self=0x17c2230) at src/io.elementary.mail.p/VirtualizingListBox/VirtualizingListBox.c:2954
 No locals.
-#10 0x00007f811011e420 in g_closure_invoke (closure=0xa617b0, return_value=return_value@entry=0x0, n_param_values=4, param_values=param_values@entry=0x7ffc336733a0, invocation_hint=invocation_hint@entry=0x7ffc33673320) at ../gobject/gclosure.c:832
-        marshal = 0x7f810f4a6950 <_g_cclosure_marshal_VOID__UINT_UINT_UINT>
+#10 0x00007f1d9f559420 in g_closure_invoke (closure=0x17bb6c0, return_value=return_value@entry=0x0, n_param_values=4, param_values=param_values@entry=0x7ffce5e24650, invocation_hint=invocation_hint@entry=0x7ffce5e245d0) at ../gobject/gclosure.c:832
+        marshal = 0x7f1d9e8a6950 <_g_cclosure_marshal_VOID__UINT_UINT_UINT>
         marshal_data = 0x0
         in_marshal = 0
-        real_closure = 0xa61790
+        real_closure = 0x17bb6a0
         __func__ = "g_closure_invoke"
-#11 0x00007f81101313d6 in signal_emit_unlocked_R (node=node@entry=0xa57c00, detail=detail@entry=0, instance=instance@entry=0xa544e0, emission_return=emission_return@entry=0x0, instance_and_params=instance_and_params@entry=0x7ffc336733a0) at ../gobject/gsignal.c:3796
+#11 0x00007f1d9f56c3d6 in signal_emit_unlocked_R (node=node@entry=0x17ba800, detail=detail@entry=0, instance=instance@entry=0x17ad370, emission_return=emission_return@entry=0x0, instance_and_params=instance_and_params@entry=0x7ffce5e24650) at ../gobject/gsignal.c:3796
         tmp = <optimized out>
-        handler = 0x7f80ec01ae40
+        handler = 0x17be440
         accumulator = 0x0
-        emission = {next = 0x7ffc336737c0, instance = 0xa544e0, ihint = {signal_id = 309, detail = 0, run_type = (G_SIGNAL_RUN_FIRST | G_SIGNAL_ACCUMULATOR_FIRST_RUN)}, state = EMISSION_RUN, chain_type = 4}
+        emission = {next = 0x7ffce5e24a70, instance = 0x17ad370, ihint = {signal_id = 362, detail = 0, run_type = (G_SIGNAL_RUN_FIRST | G_SIGNAL_ACCUMULATOR_FIRST_RUN)}, state = EMISSION_RUN, chain_type = 4}
         class_closure = 0x0
         hlist = <optimized out>
-        handler_list = 0x7f80ec01ae40
+        handler_list = 0x17be440
         return_accu = 0x0
         accu = {g_type = 0, data = {{v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}, {v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}}}
-        signal_id = 309
-        max_sequential_handler_number = 4172
+        signal_id = 362
+        max_sequential_handler_number = 4815
         return_value_altered = <optimized out>
         EMIT_RESTART = <optimized out>
-#12 0x00007f81101382ed in g_signal_emit_valist (instance=<optimized out>, signal_id=<optimized out>, detail=<optimized out>, var_args=var_args@entry=0x7ffc33673570) at ../gobject/gsignal.c:3549
-        instance_and_params = 0x7ffc336733a0
+#12 0x00007f1d9f5732ed in g_signal_emit_valist (instance=<optimized out>, signal_id=<optimized out>, detail=<optimized out>, var_args=var_args@entry=0x7ffce5e24820) at ../gobject/gsignal.c:3549
+        instance_and_params = 0x7ffce5e24650
         signal_return_type = <optimized out>
-        param_values = 0x7ffc336733b8
+        param_values = 0x7ffce5e24668
         node = <optimized out>
         i = <optimized out>
         n_params = <optimized out>
         __func__ = "g_signal_emit_valist"
-#13 0x00007f811013856f in g_signal_emit (instance=instance@entry=0xa544e0, signal_id=<optimized out>, detail=detail@entry=0) at ../gobject/gsignal.c:3606
-        var_args = {{gp_offset = 48, fp_offset = 48, overflow_arg_area = 0x7ffc33673650, reg_save_area = 0x7ffc33673590}}
-#14 0x00007f810f4e744f in g_list_model_items_changed (list=list@entry=0xa544e0, position=position@entry=0, removed=<optimized out>, added=<optimized out>) at ../gio/glistmodel.c:321
+#13 0x00007f1d9f57356f in g_signal_emit (instance=instance@entry=0x17ad370, signal_id=<optimized out>, detail=detail@entry=0) at ../gobject/gsignal.c:3606
+        var_args = {{gp_offset = 48, fp_offset = 48, overflow_arg_area = 0x7ffce5e24900, reg_save_area = 0x7ffce5e24840}}
+#14 0x00007f1d9e8e744f in g_list_model_items_changed (list=list@entry=0x17ad370, position=position@entry=0, removed=<optimized out>, added=<optimized out>) at ../gio/glistmodel.c:321
         __func__ = "g_list_model_items_changed"
-#15 0x000000000043c580 in mail_conversation_list_box_folder_changed (cancellable=0x12382a0, service_uid=0x11466a0 "dc1bfb95729cbaf409a5036625b01be1c1798fab", change_info=<optimized out>, self=0xa62220) at src/io.elementary.mail.p/ConversationList/ConversationListBox.c:1729
-        _tmp3_ = 0x8b0400
+#15 0x000000000043c580 in mail_conversation_list_box_folder_changed (cancellable=0x1e961a0, service_uid=0x14405c0 "dc1bfb95729cbaf409a5036625b01be1c1798fab", change_info=<optimized out>, self=0x17c2230) at src/io.elementary.mail.p/ConversationList/ConversationListBox.c:1729
+        _tmp3_ = 0x1451320
         _tmp7_ = <optimized out>
         _tmp13_ = 0x0
-        _tmp2_ = 0x8b0400
+        _tmp2_ = 0x1451320
         _tmp6_ = <optimized out>
         _tmp12_ = <optimized out>
-        search_result_uids = 0x8b0400
-        _tmp9_ = 0x8b0400
+        search_result_uids = 0x1451320
+        _tmp9_ = 0x1451320
         _tmp11_ = <optimized out>
         _tmp15_ = <optimized out>
-        _tmp51_ = 0xa544e0
+        _tmp51_ = 0x17ad370
         _tmp5_ = <optimized out>
-        _data21_ = 0x8b4fa0
+        _data21_ = 0x145aae0
         _tmp8_ = <optimized out>
         _tmp10_ = <optimized out>
         child = <optimized out>
         _tmp14_ = <optimized out>
-        _tmp50_ = 0xa544e0
+        _tmp50_ = 0x17ad370
         _tmp4_ = <optimized out>
         _tmp1_ = <optimized out>
         _tmp0_ = <optimized out>
@@ -288,13 +295,13 @@ No locals.
         _tmp53_ = <optimized out>
         _g_boolean_var_ = <optimized out>
 #16 _________lambda24_ (change_info=<optimized out>, _data20_=<optimized out>) at src/io.elementary.mail.p/ConversationList/ConversationListBox.c:979
-        self = 0xa62220
+        self = 0x17c2230
         _tmp1_ = <optimized out>
-        _tmp3_ = 0x11466a0 "dc1bfb95729cbaf409a5036625b01be1c1798fab"
-        _tmp5_ = 0x12382a0
+        _tmp3_ = 0x14405c0 "dc1bfb95729cbaf409a5036625b01be1c1798fab"
+        _tmp5_ = 0x1e961a0
         _tmp0_ = <optimized out>
         _tmp2_ = <optimized out>
-        _tmp4_ = 0x11466a0 "dc1bfb95729cbaf409a5036625b01be1c1798fab"
+        _tmp4_ = 0x14405c0 "dc1bfb95729cbaf409a5036625b01be1c1798fab"
         self = <optimized out>
         _tmp0_ = <optimized out>
         _tmp1_ = <optimized out>
@@ -306,76 +313,78 @@ No locals.
         _g_boolean_var_ = <optimized out>
 #17 __________lambda24__camel_folder_changed (_sender=<optimized out>, changes=<optimized out>, self=<optimized out>) at src/io.elementary.mail.p/ConversationList/ConversationListBox.c:987
 No locals.
-#18 0x00007f811011e420 in g_closure_invoke (closure=0x117dab0, return_value=return_value@entry=0x0, n_param_values=2, param_values=param_values@entry=0x7ffc33673850, invocation_hint=invocation_hint@entry=0x7ffc336737d0) at ../gobject/gclosure.c:832
-        marshal = 0x7f81101212a0 <g_cclosure_marshal_VOID__BOXED>
+#18 0x00007f1d9f559420 in g_closure_invoke (closure=0x191c2c0, return_value=return_value@entry=0x0, n_param_values=2, param_values=param_values@entry=0x7ffce5e24b00, invocation_hint=invocation_hint@entry=0x7ffce5e24a80) at ../gobject/gclosure.c:832
+        marshal = 0x7f1d9f55c2a0 <g_cclosure_marshal_VOID__BOXED>
         marshal_data = 0x0
         in_marshal = 0
-        real_closure = 0x117da90
+        real_closure = 0x191c2a0
         __func__ = "g_closure_invoke"
-#19 0x00007f81101313d6 in signal_emit_unlocked_R (node=node@entry=0x7f8090006ef0, detail=detail@entry=0, instance=instance@entry=0xc2c9c0, emission_return=emission_return@entry=0x0, instance_and_params=instance_and_params@entry=0x7ffc33673850) at ../gobject/gsignal.c:3796
+#19 0x00007f1d9f56c3d6 in signal_emit_unlocked_R (node=node@entry=0x13a0d90, detail=detail@entry=0, instance=instance@entry=0x13a2280, emission_return=emission_return@entry=0x0, instance_and_params=instance_and_params@entry=0x7ffce5e24b00) at ../gobject/gsignal.c:3796
         tmp = <optimized out>
-        handler = 0x1226b40
+        handler = 0x1e96040
         accumulator = 0x0
-        emission = {next = 0x0, instance = 0xc2c9c0, ihint = {signal_id = 438, detail = 0, run_type = (G_SIGNAL_RUN_FIRST | G_SIGNAL_ACCUMULATOR_FIRST_RUN)}, state = EMISSION_RUN, chain_type = 4}
-        class_closure = 0x7f8090005520
+        emission = {next = 0x0, instance = 0x13a2280, ihint = {signal_id = 247, detail = 0, run_type = (G_SIGNAL_RUN_FIRST | G_SIGNAL_ACCUMULATOR_FIRST_RUN)}, state = EMISSION_RUN, chain_type = 4}
+        class_closure = 0x137bf90
         hlist = <optimized out>
-        handler_list = 0x7f8090003740
+        handler_list = 0x7f1d880276c0
         return_accu = 0x0
         accu = {g_type = 0, data = {{v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}, {v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}}}
-        signal_id = 438
-        max_sequential_handler_number = 4172
+        signal_id = 247
+        max_sequential_handler_number = 4815
         return_value_altered = <optimized out>
         EMIT_RESTART = <optimized out>
-#20 0x00007f81101382ed in g_signal_emit_valist (instance=<optimized out>, signal_id=<optimized out>, detail=<optimized out>, var_args=var_args@entry=0x7ffc336739f0) at ../gobject/gsignal.c:3549
-        instance_and_params = 0x7ffc33673850
+#20 0x00007f1d9f5732ed in g_signal_emit_valist (instance=<optimized out>, signal_id=<optimized out>, detail=<optimized out>, var_args=var_args@entry=0x7ffce5e24ca0) at ../gobject/gsignal.c:3549
+        instance_and_params = 0x7ffce5e24b00
         signal_return_type = <optimized out>
-        param_values = 0x7ffc33673868
+        param_values = 0x7ffce5e24b18
         node = <optimized out>
         i = <optimized out>
         n_params = <optimized out>
         __func__ = "g_signal_emit_valist"
-#21 0x00007f811013856f in g_signal_emit (instance=<optimized out>, signal_id=<optimized out>, detail=<optimized out>) at ../gobject/gsignal.c:3606
-        var_args = {{gp_offset = 32, fp_offset = 48, overflow_arg_area = 0x7ffc33673ad0, reg_save_area = 0x7ffc33673a10}}
-#22 0x00007f810f26ad38 in folder_emit_changed_cb () from /nix/store/9apirq79swwjqvh8z66g3h0phc1qkf1r-evolution-data-server-3.46.3/lib/libcamel-1.2.so.64
-No symbol table info available.
-#23 0x00007f81101c04df in g_main_dispatch (context=0x6f1620) at ../glib/gmain.c:3444
-        dispatch = 0x7f81101bc6a0 <g_idle_dispatch>
+#21 0x00007f1d9f57356f in g_signal_emit (instance=instance@entry=0x13a2280, signal_id=<optimized out>, detail=detail@entry=0) at ../gobject/gsignal.c:3606
+        var_args = {{gp_offset = 32, fp_offset = 48, overflow_arg_area = 0x7ffce5e24d80, reg_save_area = 0x7ffce5e24cc0}}
+#22 0x00007f1d9e71ed38 in folder_emit_changed_cb (user_data=<optimized out>) at /build/evolution-data-server-3.46.3/src/camel/camel-folder.c:311
+        signal_closure = <optimized out>
+        folder = 0x13a2280
+        changes = 0x20b96d0
+#23 0x00007f1d9f5fb4df in g_main_dispatch (context=0x1283620) at ../glib/gmain.c:3444
+        dispatch = 0x7f1d9f5f76a0 <g_idle_dispatch>
         prev_source = 0x0
         begin_time_nsec = 0
         was_in_call = 0
-        user_data = 0x142dec0
-        callback = 0x7f810f26acf0 <folder_emit_changed_cb>
+        user_data = 0x7f1d7c138410
+        callback = 0x7f1d9e71ecf0 <folder_emit_changed_cb>
         cb_funcs = <optimized out>
-        cb_data = 0x788520
+        cb_data = 0x208d850
         need_destroy = <optimized out>
-        source = 0x1502d50
-        current = 0x744000
+        source = 0x20ef450
+        current = 0x12cf800
         i = 0
         __func__ = "g_main_dispatch"
-#24 g_main_context_dispatch (context=context@entry=0x6f1620) at ../glib/gmain.c:4162
+#24 g_main_context_dispatch (context=context@entry=0x1283620) at ../glib/gmain.c:4162
 No locals.
-#25 0x00007f81101c0898 in g_main_context_iterate (context=context@entry=0x6f1620, block=block@entry=1, dispatch=dispatch@entry=1, self=<optimized out>) at ../glib/gmain.c:4238
+#25 0x00007f1d9f5fb898 in g_main_context_iterate (context=context@entry=0x1283620, block=block@entry=1, dispatch=dispatch@entry=1, self=<optimized out>) at ../glib/gmain.c:4238
         max_priority = 300
         timeout = 0
         some_ready = 1
         nfds = <optimized out>
         allocated_nfds = 4
-        fds = 0x73cf60
+        fds = 0x141c590
         begin_time_nsec = 0
-#26 0x00007f81101c092c in g_main_context_iteration (context=context@entry=0x6f1620, may_block=may_block@entry=1) at ../glib/gmain.c:4303
+#26 0x00007f1d9f5fb92c in g_main_context_iteration (context=context@entry=0x1283620, may_block=may_block@entry=1) at ../glib/gmain.c:4303
         retval = <optimized out>
-#27 0x00007f810f4ffe3d in g_application_run (application=application@entry=0x7320f0, argc=argc@entry=1, argv=argv@entry=0x7ffc33673d78) at ../gio/gapplication.c:2571
-        arguments = 0x737e50
+#27 0x00007f1d9e8ffe3d in g_application_run (application=application@entry=0x12bf0f0, argc=argc@entry=2, argv=argv@entry=0x7ffce5e25028) at ../gio/gapplication.c:2571
+        arguments = 0x12c4670
         status = 0
-        context = 0x6f1620
+        context = 0x1283620
         acquired_context = <optimized out>
         __func__ = "g_application_run"
-#28 0x000000000041d97e in _vala_main (args_length1=1, args=0x7ffc33673d78) at src/io.elementary.mail.p/Application.c:852
-        application = 0x7320f0
-        _tmp0_ = 0x7320f0
+#28 0x000000000041d97e in _vala_main (args_length1=2, args=0x7ffce5e25028) at src/io.elementary.mail.p/Application.c:852
+        application = 0x12bf0f0
+        _tmp0_ = 0x12bf0f0
         result = <optimized out>
         application = <optimized out>
         _tmp0_ = <optimized out>
         result = <optimized out>
-#29 main (argc=1, argv=0x7ffc33673d78) at src/io.elementary.mail.p/Application.c:861
+#29 main (argc=2, argv=0x7ffce5e25028) at src/io.elementary.mail.p/Application.c:861
 No locals.
